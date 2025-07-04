@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KnowledgeHub</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+<div class="logo">
+Knowledge<span>Hub</span>
+</div>
+<div class="nav-links" id="navLinks">
+<a href="#">Subjects</a>
+<a href="#">Classes</a>
+<a href="#">Boards</a>
+<a href="#">Streams</a>
+<button class="register-btn"><a href="register.html">Register</a></button>
+</div>
+<div class="menu-icon" id="menuIcon">
+&#9776;
+</div>
+</nav>
+<section class="hero">
+<div class="hero-content">
+<h1>Find the right <span>course</span> for you</h1>
+<p>
+See your personalised recommendations based on your interests and goals
+</p>
+<button class="register-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdubjf4UcskdsATSKMaoMslYSDqqJlSfOz_5o06znH8fSt3iA/viewform?usp=sf_link">Register</a></button>
+</div>
+<div class="hero-image">
+<img src="{{ url_for('static', filename='image/bg.png') }}" alt="Hero illustration" />
+</div>
+</section>
+<section class="stats">
+<div class="stat-box stat-box1">
+<div class="stat-desc">
+<span><b>Unboaring Study Method</b></span>
+</div>
+<div class="stat-title">
+Best for of junior school students... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ea ullam repellat, sed minus tempore neque. Nisi ullam, omnis expedita!
+</div>
+</div>
+<div class="stat-box stat-box2">
+<div class="stat-desc">
+<span><b>Relaxing Phase</b></span>
+</div>
+<div class="stat-title">
+Best for of junior school students... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque officiis iure minima rerum, aliquid accusantium deserunt voluptatum quas eveniet.
+</div>
+</div>
+<div class="stat-box stat-box3">
+<div class="stat-desc">
+<span><b>Great Results With Fun</b></span>
+</div>
+<div class="stat-title">
+Best for of junior school students... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus amet est culpa quasi dolor, ipsam voluptates fugiat incidunt voluptatem et.
+</div>
+</div>
+</section>
+
+
+<section class="hero2">
+<div class="container">
+<div class="hero-content2">
+<h1>Enhance your <span>Knowledge</span> from our free notes.</h1>
+<p>
+See your personalised recommendations based on your interests and goals
+</p>
+<button class="register-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdubjf4UcskdsATSKMaoMslYSDqqJlSfOz_5o06znH8fSt3iA/viewform?usp=sf_link">Register</a></button>
+</div>
+<div class="hero-slider-box">
+<div class="slider-container">
+<button class="slider-btn prev" id="prevBtn">&#8592;</button>
+<div class="slider" id="slider">
+<div class="slide slide-fir">
+<span class="slide-badge">Our courses1</span>
+<p class="slide-desc">
+Make education work for you with flexible online courses from leading schools.
+</p>
+</div>
+<div class="slide slide-sec">
+<span class="slide-badge">Our courses2</span>
+<p class="slide-desc">
+Learn programming fundamentals and build real-world projects step by step.
+</p>
+</div>
+<div class="slide slide-thi">
+<span class="slide-badge">Our courses3</span>
+<p class="slide-desc">
+Master data science skills with hands-on practice and expert guidance.
+</p>
+</div>
+<div class="slide slide-fou">
+<span class="slide-badge">Our courses4</span>
+<p class="slide-desc">
+Explore creative design courses and unlock your artistic potential.
+</p>
+</div>
+<div class="slide slide-fif">
+<span class="slide-badge">Our courses5</span>
+<p class="slide-desc">
+Advance your career with top-rated business and management courses.
+</p>
+</div>
+<div class="slide slide-six">
+<span class="slide-badge">Our courses6</span>
+<p class="slide-desc">
+Discover language learning courses to communicate globally.
+</p>
+</div>
+</div>
+<button class="slider-btn next" id="nextBtn">&#8594;</button>
+<div class="slider-indicator" id="sliderIndicator">
+1/6
+</div>
+</div>
+</div>
+
+
+</div>
+
+<section class="badges">
+<span class="badge badge-new active" data-target="new-courses">New Courses</span>
+<span class="badge badge-recommended" data-target="recommended-courses">Recommended</span>
+<span class="badge badge-popular" data-target="popular-courses">Most Popular</span>
+</section>
+<section class="course-cards-wrapper">
+<div class="course-cards active" id="new-courses">
+<div class="tab-cards">
+<div class="course-card">
+<span class="category-badge science">Commerce</span>
+<img src="https://www.shutterstock.com/image-vector/commerce-related-activities-receiving-goods-600nw-2412881923.jpg" alt="Science" />
+<h3>Unboaring Study Method</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge math">Physics</span>
+<img src="https://static.vecteezy.com/system/resources/thumbnails/003/297/662/small_2x/physics-concept-with-icon-set-with-big-word-free-vector.jpg" alt="phy" />
+<h3>Relaxing Phase</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge english">Chemistry</span>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_76B-pRgudZATMCyKe5bLnz2Sc3AUssBIQA&s" alt="che" />
+<h3>Great Results With Fun</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge science">Maths</span>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAACVVBMVEX/////tD0AAACHo/ZXv8pXwMb///3/3kX//v////j9//////r8/PyKo+9mZmbp6eljcNkuLi60tLTe3t52dnb09PT4//+jo6PJyclERETw9fX/tD/P1uDX19dra2vl5eWHh4eamppSUlJcXFza2tqfor1zc3OSkpKqqqrBwcF+fn4RERHR3fTP5ODOzs4dHR05OTmIovr/5mhTwsW1x/YAhoQqKioaGhrx8vplddtqwsqhrIn8vTAAAHfzsTVPwsr6xkBYWf/6+eT6lSq01dictPR6kelvheVjcsxtfNCFkNapr+DE0e5eaNiBnvtia8/g6POQo+laZNqxxOi2v9uyyevE6ein29eR1cyVrOaI09ia1deant3e8vSIzNKGpeduubKRspjLoWLhmUPv2ebuxuC8pHPZnU3sljPzoif8nw3fR5n3AILsG4nsbK5+tab64kX11O3lmDj70lPS0PH66l+McJ6dAITfF4h9tqmWso0AAHA0C3WDEoS/AH3rrc8AAIzAq5pPJF87M4qzdk9zP12UlL7v5cpkXOXw2qH653DComn00Gzww4v1vEaxqmxZrN1hstT0t2xidLedQ+iQVNlZjd90wumjSOhecab32Y1Uvdd8w/OLcty5f+NPdub0xlvM2W661H6j1+7Xve7VrvFLjclZY6B/x6OhX9qCiKpbZY/297KMsXxEobLRuGdOjLXDuHDs54/0w4s1O3vxuYLdvsPt0K4zo6mbbTLmxljXoz95WStjVm+rgkHHoUeMXBvCiEFCamKDajAAfX7f0Laig14pnvbNAAAbL0lEQVR4nO1di38T15W+kqXLvXdGlmOjsT1+G4xtsBzMJEQormTkCUkcDIZQOaCMUIAGk20bl8DuQne3j92tYgpKgtMk2M3WbZpHISHbdlMrhSbbTbp/155zZ/SwLfPIBizCfPywZD2M5vM53/nOuXcGQly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLlzcJtTNm9ZvGoQ79XDbJR9Yv35TPSHt6220tw1u2tQHj8PzwbX+tGsCdbvX622EO5vgthZuQ3Dr3UCIt4Cmeq93PbwQ7t6nFD3glQyQrQ5FbUjLA8so2nzfU9RMbEqQonrJS4gEg8Fm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" alt="maths" />
+<h3>Unboaring Study Method</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge math">Economics</span>
+<img src="https://st2.depositphotos.com/4428871/9640/v/450/depositphotos_96403910-stock-illustration-economics-word-cloud.jpg" alt="Eco" />
+<h3>Relaxing Phase</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge english">Biology</span>
+<img src="https://static.vecteezy.com/system/resources/previews/027/013/992/non_2x/biology-doodle-set-collection-of-hand-drawn-elements-science-biology-circle-shape-illustration-isolated-on-a-white-background-vector.jpg" alt="bio" />
+<h3>Great Results With Fun</h3>
+<button class="details-btn">More Details</button>
+</div>
+<!-- Aur bhi cards add kar sakte hain -->
+</div>
+</div>
+<div class="course-cards" id="recommended-courses">
+<div class="tab-cards">
+<div class="course-card">
+<span class="category-badge science">Science2</span>
+<img src="https://img.icons8.com/fluency/96/physics.png" alt="Science" />
+<h3>Unboaring Study Method</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge math">Math</span>
+<img src="https://img.icons8.com/fluency/96/calculator.png" alt="Math" />
+<h3>Relaxing Phase</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge english">English</span>
+<img src="https://img.icons8.com/fluency/96/book.png" alt="English" />
+<h3>Great Results With Fun</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge science">Science</span>
+<img src="https://img.icons8.com/fluency/96/physics.png" alt="Science" />
+<h3>Unboaring Study Method</h3>
+
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge math">Math</span>
+<img src="https://img.icons8.com/fluency/96/calculator.png" alt="Math" />
+<h3>Relaxing Phase</h3>
+
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge english">English</span>
+<img src="https://img.icons8.com/fluency/96/book.png" alt="English" />
+<h3>Great Results With Fun</h3>
+<button class="details-btn">More Details</button>
+</div>
+<!-- Aur bhi cards add kar sakte hain -->
+</div>
+</div>
+<div class="course-cards" id="popular-courses">
+<div class="tab-cards">
+<div class="course-card">
+<span class="category-badge science">Science3</span>
+<img src="https://img.icons8.com/fluency/96/physics.png" alt="Science" />
+<h3>Unboaring Study Method</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge math">Math</span>
+<img src="https://img.icons8.com/fluency/96/calculator.png" alt="Math" />
+<h3>Relaxing Phase</h3>
+
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge english">English</span>
+<img src="https://img.icons8.com/fluency/96/book.png" alt="English" />
+<h3>Great Results With Fun</h3>
+
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge science">Science</span>
+<img src="https://img.icons8.com/fluency/96/physics.png" alt="Science" />
+<h3>Unboaring Study Method</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge math">Math</span>
+<img src="https://img.icons8.com/fluency/96/calculator.png" alt="Math" />
+<h3>Relaxing Phase</h3>
+<button class="details-btn">More Details</button>
+</div>
+<div class="course-card">
+<span class="category-badge english">English</span>
+<img src="https://img.icons8.com/fluency/96/book.png" alt="English" />
+<h3>Great Results With Fun</h3>
+<button class="details-btn">More Details</button>
+</div>
+<!-- Aur bhi cards add kar sakte hain -->
+</div>
+</div>
+</section>
+</section>
+  <div class="sec-container">
+      <div>
+      <div class="main-title">
+        Explore top <span class="highlight">subjects</span>
+      </div>
+      <div class="desc-section">
+        Whether tackling trauma, mastering mindfulness or gearing up for a career as a psychologist, our expert-led courses and credentials will help you achieve career success and satisfaction.
+      </div>
+      <div class="explore-btns">
+        <button class="btn">Explore courses</button>
+        <a href="#" style="color:#ff7043;text-decoration:underline;font-size:1em;">View all subjects &rarr;</a>
+      </div>
+    </div>
+    <div class="side-card">
+      <div class="badge">Our subjects</div>
+      We have the largest selection of subjects to study with our online courses
+    </div>
+  </div>
+
+<footer>
+<div class="footer-content">
+<div>
+Location: Kanpur, India <a href="https://maps.app.goo.gl/HnkVTU34DMHw5dK96">view in maps</a>
+</div>
+<div>
+&copy; 2025 Suyash. All rights reserved.
+</div>
+</div>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
